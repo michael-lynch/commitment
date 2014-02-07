@@ -41,6 +41,18 @@ Initialize the plugin targeting the class, ID or element that will contain the c
 <br />A string that defines a Github username that will be used to filter the commit messages (default: null).
 </p>
 
+<p><em>filterPath</em>: string
+<br />A string that defines a path that is to be required in the commits being returned (default: null).
+</p>
+
+<p><em>filterSince</em>: ISO timestamp (YYYY-MM-DDTHH:MM:SSZ)
+<br />A timestamp that defines the start date of the commit messages being returned (default: null).
+</p>
+
+<p><em>filterUntil</em>: ISO timestamp (YYYY-MM-DDTHH:MM:SSZ)
+<br />A timestamp that defines the end date of the commit messages being returned (default: null).
+</p>
+
 <p><em>makeCommitLink</em>: boolean
 <br />A boolean value that indicates whether or not the commit message should be a link (default: false).
 </p>
