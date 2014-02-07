@@ -61,10 +61,6 @@ Initialize the plugin targeting the class, ID or element that will contain the c
 <br />A boolean value that indicates whether or not the commiter avatar should be displayed (default: true).
 </p>
 
-<p><em>showCommentsLink</em>: boolean
-<br />A boolean value that indicates whether or not a link to the comments for each commit should be displayed (default: false).
-</p>
-
 <p><em>success</em>: function() {}
 <br />A function that runs after the plugin has successfully retrieved the commit messages. (default: function()).
 </p>

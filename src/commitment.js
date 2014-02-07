@@ -31,7 +31,6 @@ Licensed under the MIT license
             dateFormat: null,
             showCommitter: true,
             showCommitterAvatar: true,
-            showCommentsLink: false,
             error: function(message) {},
             success: function() {}
         }
@@ -170,12 +169,6 @@ Licensed under the MIT license
 			        			
 			        			//append committer username
 			        			commit += '<div class="user">By <a href="'+data[i].committer.url+'" target="_blank">'+data[i].committer.login+'</a></div></div>';
-		        			}
-		        			
-		        			//if showCommentsLink is true and comments_url exists
-		        			if(s.showCommentsLink && data[i].comments_url) {
-			        			
-			        			commit += ' <a href="'+data[i].comments_url+'" target="_blank" class="comments">Comments</a>';
 		        			}
 		        			
 		        			//close the commit message list item
