@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta charset="utf-8">
+
+	<title>Commitment jQuery Plugin</title>
+	
+	<meta name="description" content="A simple, lightweight jQuery plugin used to display commit messages for a specific Github repository.">
+	
+	<meta name="author" content="http://michaelynch.com">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<style>
+	
+	body {
+		font: 14px Arial, Helvetica, sans-serif;
+		line-height: 22px;
+		margin: 0;
+	}
+	
+	ul {
+		margin: 40px 0 40px 5%;
+		padding: 0;
+		float: left;
+		width: 90%;
+	}
+	
+	li {
+		border-bottom: 1px #ccc solid;
+		margin: 0 0 20px 0;
+		padding: 0px 0px 20px 0px;
+		list-style: none;
+		float: left;
+		width: 100%;
+	}
+	
+	li:last-child {
+		border: none;
+	}
+	
+	.message, .date {
+		margin: 0 0 10px 0;
+		float: left;
+		width: 100%;
+	}
+	
+	.date {
+		font-style: italic;
+	}
+	
+	.committer {
+		float: left;
+	}
+	
+	.avatar {
+		float: left;
+		width: 30px;
+		height: 30px;
+	}
+	
+	.user {
+		margin: 5px 0 0 10px;
+		float: left;
+	}
+	
+	.comments {
+		margin: 20px 0 0 0;
+		float: right;
+	}
+	
+	a {
+		color: dodgerblue;
+		text-decoration: none;
+	}
+	
+	</style>
+	
+</head>
+
+	<body lang="en">
+
+		<ul id="commits"></ul>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		
+		<script src="/src/commitment.js"></script>
+		
+		<script>
+		
+			$('#commits').commitment({
+				user: 'michael-lynch',
+				repo: 'reading-time',
+				showCommentsLink: true
+			});
+		
+		</script>
+
+	</body>
+	
+</html>
