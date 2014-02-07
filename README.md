@@ -71,6 +71,7 @@ Initialize the plugin targeting the class, ID or element that will contain the c
 
 <p><em>showCommitterAvatar</em>: boolean
 <br />A boolean value that indicates whether or not the commiter avatar should be displayed (default: true).
+<br /><em>* showCommitter is required to be set to true to use showCommitterAvatar</em>
 </p>
 
 <p><em>success</em>: function() {}
