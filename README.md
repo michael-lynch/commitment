@@ -16,7 +16,7 @@ Create an ordered or unordered list and assign it a class or ID.
 
     <ul id="commits"></ul>
     
-Initialize the plugin targeting the class, ID or element that will contain the commit messages. 
+Initialize the plugin targeting the class, ID or element that will contain the commit messages, and set the "user" and "repo" properties of the repository you wish to display the commit messages of. 
 
 	$('#commits').commitment({
 	    user: 'michael-lynch',
