@@ -35,7 +35,8 @@ Licensed under the MIT license
             showCommitter: true,
             showCommitterAvatar: true,
             error: function(message) {},
-            success: function() {}
+            success: function() {},
+            limit: null
         }
         
         //define plugin
@@ -115,9 +116,17 @@ Licensed under the MIT license
 		        	url: endPoint,
 		        	dataType: 'json',
 		        	success: function(data) {
+
+		        		//default limit
+		        		var showLimit = data.length;
+
+	        			//get the show limit
+		        		if(s.limit) {
+		        			showLimit = s.limit;
+		        		}
 		        	
-		        		//for each commit
-		        		for(var i = 0; i < data.length; i++) {
+		        		//for each commit or until limit is reached
+		        		for(var i = 0; i < showLimit; i++) {
 		        		
 		        			//define commit as a list item
 		        			var commit = '<li>';
