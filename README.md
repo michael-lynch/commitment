@@ -8,20 +8,26 @@ A simple, lightweight jQuery plugin used to display commit messages for a specif
 
 Include jQuery and the plugin in the head or footer of your page.
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+```html
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
-    <script src="/js/plugins/commitment.js"></script>
+<script src="/js/plugins/commitment.js"></script>
+```
     
 Create an ordered or unordered list and assign it a class or ID.
 
-    <ul id="commits"></ul>
+```html
+<ul id="commits"></ul>
+```
     
 Initialize the plugin targeting the class, ID or element that will contain the commit messages, and set the "user" and "repo" properties of the repository you wish to display the commit messages of. 
 
-	$('#commits').commitment({
-	    user: 'michael-lynch',
-	    repo: 'reading-time'
-	});
+```js
+$('#commits').commitment({
+    user: 'michael-lynch',
+    repo: 'reading-time'
+});
+```
 	
 ####Options
 
@@ -84,17 +90,18 @@ Initialize the plugin targeting the class, ID or element that will contain the c
 
 #####Example:
 
-		$(function() {
-			
-			$('#commits').commitment({
-				user: 'michael-lynch',
-				repo: 'reading-time',
-				success: function() {
-				    console.log('Commit messages were successfuly retrieved from Github!');
-				},
-				error: function(message) {
-				    console.log(message);
-				}
-			});
-				
-		});
+```js
+$(function() {
+
+	$('#commits').commitment({
+		user: 'michael-lynch',
+		repo: 'reading-time',
+		success: function() {
+		    console.log('Commit messages were successfuly retrieved from Github!');
+		},
+		error: function(message) {
+		    console.log(message);
+		}
+	});	
+});
+```
